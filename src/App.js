@@ -1,12 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const App = () => {
+  const [image, setImage] = useState(null);
+  const [attendanceRecords, setAttendanceRecords] = useState([]);
+
+  useEffect(() => {
+    fetchAttendanceRecords();
+  }, []);
+
+  const fetchAttendanceRecords = async () => {
+    try {
+      const response = await axios.get('/api/attendance');
+      setAttendanceRecords(response.data);
+    } catch (error) {
+      console.error('Error fetching attendance records:', error);
+    }
+  };
+
+  const handleImageCapture = async () => {
+    const formData = new FormData();
+    formData.append('image', image);
+
+    try {
+      await axios.post('/api/capture', formData);
+      fetchAttendanceRecords();
+    } catch (error) {
+      console.error('Error capturing image:', error);
+    }
+  };
+
   return (
-    <div className="App">
-     
+    <div className='App'>
+      <input type="file" accept="image/*" onChange={(e) => setImage(e.target.files[0])} />
+      <button onClick={handleImageCapture}>Capture Image</button>
+
+      <h2>Attendance Records</h2>
+      <ul>
+        {attendanceRecords.map((record) => (
+          <li key={record._id}>{record.user} - {record.timestamp}</li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default App;
