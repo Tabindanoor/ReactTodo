@@ -47,19 +47,18 @@
 // };
 
 // export default App;
+// App.js
 
-
-import React from 'react'
-import WebcamComponent from './components/WebcamComponent'
+import React from 'react';
+import WebcamComponent from './components/WebcamComponent';
 
 const App = () => {
   return (
     <div>
-      
-      <WebcamComponent/>
-
+      <h1>Face Recognition Attendance System</h1>
+      <WebcamComponent />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
