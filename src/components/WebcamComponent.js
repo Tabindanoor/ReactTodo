@@ -121,7 +121,6 @@ const WebcamComponent = () => {
         <div key={index}>
           <p>Face {index + 1}</p>
           <p>Descriptor: {face.descriptor}</p>
-          {/* You can display more information about each face */}
         </div>
       ))}
     </div>
