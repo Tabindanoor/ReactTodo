@@ -57,6 +57,7 @@ const App = () => {
     <div>
       <h1>Face Recognition Attendance System</h1>
       {/* <h1>Face Recognition Attendance System</h1> */}
+      {/* <h1>Face Recognition Attendance System</h1> */}
       <WebcamComponent />
     </div>
   );
