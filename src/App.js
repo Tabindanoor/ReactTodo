@@ -84,9 +84,8 @@ function App() {
 
   // Handle image capture and attendance marking
   const handleCapture = (capturedImage) => {
-    // Send captured image to backend for processing
-    // Update status state based on attendance result
-    setStatus('Attendance marked');
+    
+    // setStatus('Attendance marked');
   };
 
   return (
