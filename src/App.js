@@ -77,8 +77,7 @@ function App() {
 
   // Handle form submission
   const handleSubmit = (userData) => {
-    // Send data to backend API for user registration
-    // Update user state
+   
     setUser(userData);
   };
 
