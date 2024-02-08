@@ -109,6 +109,8 @@ const Form = ({ submitForm }) => {
   });
 
   const webcamRef = useRef(null);
+  const webcamRef = useRef(null);
+  const webcamRef = useRef(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
