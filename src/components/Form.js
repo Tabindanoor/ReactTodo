@@ -122,7 +122,6 @@ const Form = ({ submitForm }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     submitForm(formData);
-    submitForm(formData);
   };
 
   return (
