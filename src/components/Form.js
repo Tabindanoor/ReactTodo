@@ -139,6 +139,7 @@ const Form = ({ submitForm }) => {
             name="ID"
             value={formData.ID}
             onChange={handleChange}
+            onChange={handleChange}
           />
         </div>
 
