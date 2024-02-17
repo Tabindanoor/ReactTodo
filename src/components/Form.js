@@ -155,6 +155,7 @@ const Form = ({ submitForm }) => {
           type="submit"
         >
           Submit
+          Submit
         </button>
       </form>
     </div>
