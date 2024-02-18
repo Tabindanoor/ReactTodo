@@ -55,6 +55,7 @@ const App = () => {
         <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone" />
         <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
         <button onClick={capture}>Capture</button>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </div>
