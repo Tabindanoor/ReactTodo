@@ -56,6 +56,7 @@ const App = () => {
         <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
         <button onClick={capture}>Capture</button>
         <br />
+        <br />
         <button type="submit">Submit</button>
       </form>
     </div>
