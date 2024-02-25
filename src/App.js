@@ -39,7 +39,7 @@ const WordToPptx = () => {
                 fontFamily: 'Arial',
                 color: '#000000',
                 bold: true,
-                background:blue,
+                background:'blue',
                 alignment: 'left',
               },
             },
@@ -79,6 +79,7 @@ const WordToPptx = () => {
 
   return (
     <div>
+    <br />
       {slides.length > 0 && (
         <button onClick={() => generateSlides(slides, 'output.pptx')}>
           Download PPTX
