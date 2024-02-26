@@ -79,7 +79,7 @@ const WordToPptx = () => {
 
   return (
     <div>
-    <br />
+    {/* <br /> */}
       {slides.length > 0 && (
         <button onClick={() => generateSlides(slides, 'output.pptx')}>
           Download PPTX
