@@ -50,7 +50,7 @@ function TaskTracker() {
   };
 
   return (
-    <div className="container mx-auto p-4 justify-center  App flex center">
+    <div className="container mx-auto p-4 justify-center  App flex center ">
       <div>
       <h1 className="text-3xl font-bold mb-4">Task Tracker</h1>
       <form
@@ -64,7 +64,7 @@ function TaskTracker() {
           type="text"
           value={isEditing !== null ? editedText : text}
           onChange={(e) => (isEditing !== null ? setEditedText(e.target.value) : setText(e.target.value))}
-          placeholder="Add Task"
+          placeholder="Add Task to List "
           className="border-2 border-gray-300 p-2 mr-2"
         />
         <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
