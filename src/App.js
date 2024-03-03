@@ -67,7 +67,7 @@ function TaskTracker() {
           placeholder="Add Task to List "
           className="border-2 border-gray-300 p-2 mr-2"
         />
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
           {isEditing !== null ? 'Save' : 'Add Task'}
         </button>
         {isEditing !== null && (
